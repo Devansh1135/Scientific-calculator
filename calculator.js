@@ -1,3 +1,4 @@
+import { tokenizer } from "./tokenizer.js"
 
 const display = document.getElementById("displayText")
 document.querySelectorAll(".col").forEach(col => {
@@ -12,7 +13,8 @@ document.querySelectorAll(".col").forEach(col => {
 const submit = document.getElementById("submit")
 submit.addEventListener("click" , function(){
     const expression = display.value
-    console.log(expression)
+    const tokens = tokenizer(expression)
+    console.log(tokens)
 
 })
 

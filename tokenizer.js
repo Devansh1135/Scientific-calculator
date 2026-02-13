@@ -1,4 +1,4 @@
-function tokenizer(expr) {
+export function tokenizer(expr) {
     let number = ""
     const tokens = []
     const pattern = /^\d(\.\d)?$/
@@ -43,5 +43,5 @@ function tokenizer(expr) {
 
 
 
-document.getElementById("demo").innerHTML = tokenizer("-234+434");
+// document.getElementById("demo").innerHTML = tokenizer("-234+434");
 
