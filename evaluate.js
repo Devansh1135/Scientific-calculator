@@ -99,6 +99,7 @@ toggleBtn.addEventListener("click" , () => {
 display.addEventListener("keydown" , (e) => {
     if (e.key === "Enter") {
         e.preventDefault()
+        calculator.expression = display.value
         const result = calculator.evaluate()
         display.value = result
     }
